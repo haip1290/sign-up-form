@@ -6,5 +6,72 @@
     <title>Sign-up Form</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <div id="main">
+      <div id="left">
+        <div class="overlay">
+          <div class="logo"></div>
+        </div>
+        <div id="photo-credit">Photo by <a href="">Zin</a></div>
+      </div>
+      <div id="right">
+        <header id="intro">
+          <p>
+            This is not online service! You know you need something like this in
+            you life to help you realize your deepest dreams. Sign up
+            <i>now</i> to get started
+          </p>
+          <p>You <i>know</i> you want to.</p>
+        </header>
+
+        <div id="sign-up-form">
+          <h2>Let's do this!</h2>
+          <form action="" method="post">
+            <div class="form-control">
+              <label for="first-name">First name</label>
+              <input type="text" name="fistName" id="first-name" />
+            </div>
+            <div class="form-control">
+              <label for="last-name">Last name</label>
+              <input type="text" name="lastName" id="last-name" />
+            </div>
+            <div class="form-control">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" required />
+            </div>
+            <div class="form-control">
+              <label for="phone-number">Phone number</label>
+              <input type="tel" name="phoneNumber" id="phone-number" />
+            </div>
+            <div class="form-control">
+              <label for="pwd">Password</label>
+              <input
+                type="password"
+                name="pwd"
+                id="pwd"
+                minlength="8"
+                maxlength="30"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="re-pwd">Confirm Password</label>
+              <input
+                type="password"
+                name="rePwd"
+                id="re-pwd"
+                pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)$"
+                required
+              />
+            </div>
+          </form>
+        </div>
+
+        <div id="btn-section">
+          <button type="submit">Create Account</button>
+          <p>Already have a login? <a href="">Log in</a></p>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

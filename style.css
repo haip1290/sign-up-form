@@ -3,3 +3,154 @@
     margin: 0;
     padding: 0;
 }
+
+#main {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    
+}
+
+#left {
+    flex: 1;
+    background-image: url('IMG_5151.JPG');
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.overlay {
+    /* background-color: white; */
+    height: 20vh;
+    background-color: rgba(255, 255, 255, 0.65);
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.logo {
+    background-image: url('logo_processed.jpg');
+    width: 80%;
+    height: 100%;
+    background-size: 80% 220%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#left a {
+    text-decoration: underline;
+    color: white;
+}
+
+#photo-credit {
+    text-align: center;
+    color: white;
+    padding-bottom: 10px;
+}
+
+#right{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+#intro {
+    flex: 0 0 30vh;
+    padding-top: 10vh;
+
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#intro p {
+    margin-top: 20px;
+}
+
+#sign-up-form {
+    flex: 0 0 40vh;
+    padding-top: 40px;
+    /* background-color: rgb(238, 123, 16); */
+}
+
+h2 {
+    
+}
+
+form {
+    padding-top: 20px;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.form-control {
+    display: flex;
+    flex: 0 0 35%;
+    flex-direction: column;
+}
+
+.form-control label {
+    text-transform: uppercase;
+}
+
+input {
+    width: 80%;
+    border: 1px solid #E5E7EB;
+    border-radius: 5px;
+    height: 2rem;
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid blue;
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.5);
+}
+
+input:invalid {
+    outline: none;
+    border: 1px solid red;
+}
+
+#btn-section {
+    flex: 0 0 30vh;
+    padding-top: 40px;
+}
+
+#btn-section button {
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    width: 200px;
+    height: 3rem;
+    border: none;   
+    border-radius: 10px;
+    background-color: rgb(235, 126, 24);
+}
+
+#btn-section a {
+    text-decoration: none;
+}
+
+#btn-section p {
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+#btn-section a {
+    color: rgb(235, 126, 24);
+}
+
+#intro, #btn-section {
+    background-color: rgb(247, 244, 241);
+}
+
+#intro, #sign-up-form, #btn-section {
+    padding-left: 50px;
+}
+
